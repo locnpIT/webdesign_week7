@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        /* Reset CSS */
+        a, abbr, acronym, address, applet, article, aside, audio,
+        b, blockquote, big, body,
+        center, canvas, caption, cite, code, command,
+        datalist, dd, del, details, dfn, dl, div, dt, 
+        em, embed,
+        fieldset, figcaption, figure, font, footer, form, 
+        h1, h2, h3, h4, h5, h6, header, hgroup, html,
+        i, iframe, img, ins,
+        kbd, 
+        keygen,
+        label, legend, li, 
+        meter,
+        nav,
+        object, ol, output,
+        p, pre, progress,
+        q, 
+        s, samp, section, small, span, source, strike, strong, sub, sup,
+        table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+        u, ul, 
+        var{
+            background: transparent;
+            border: 0 none;
+            font-size: 100%;
+            margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+            vertical-align: top; }
+
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        table, table td { 
+            padding:0;
+            border:none;
+            border-collapse:collapse;
+        }
+        img {
+            vertical-align:top; 
+        }
+        embed { 
+            vertical-align:top;
+        }
+        /* Reset CSS */
+        /* CSS */
+         .clear{
+                clear: both;
+            }
+            html{
+                width: 100%;
+                font-size: 62.5%;  /* 10px*/
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 2rem;
+                color: #262626;
+                background: #fff;
+                min-width: 980px;
+                letter-spacing: -1px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+            nav ul li:hover{
+                text-decoration: none;
+                background-color: black;    
+            }
+            nav ul li:hover a{
+                color: #fff;
+            }
+
+            header{
+                width: 960px;
+                /* height: 120px; */
+                /* background-color: lightyellow; */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header nav{
+                width: 100%;
+                height: 71px;
+                padding: 0px;
+                background:url(./images/row1-top-tail.gif) left top repeat-x;
+                
+            }
+            nav ul li{
+                float: left;
+                width: 192px;
+                line-height: 2.6rem;
+                padding: 21px 0px 24px 0px;
+                text-align: center;
+                background:url(./images/menu-a-tail.gif) left no-repeat ;
+            }
+            nav ul li:first-child{
+                background: none;
+            }
+            nav ul li a{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 2rem;
+                color: #262626;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+            }
+            span{
+                color: #75757D;
+                font-size: 1em;
+            }
+            nav ul li:hover{
+                text-decoration: none;
+                background-color: black;    
+            }
+            nav ul li:hover a{
+                color: #fff;
+            }
+            #row2{
+                background-color: #fdfdfd;
+                height: 10rem;
+            }
+
+            .logo{
+                width: 40%;
+            }
+            .logotext{
+                float: left;
+
+            }
+            .logotext h1{
+                font-size: 3em;
+                padding: 15.6px 0 15.6px 0;
+            }
+            .logotext2{
+                float: left;
+                margin-top: 52px;
+            }
+            .search .search-field{
+                float: right;
+                display: inline;
+                /* margin: 5px; */
+            }
+            #search-form{
+                position: relative;
+                left: 21px;
+                top: 35px;
+            }
+            .search #search-form img{
+                position: relative;
+                top: 7px;
+                right: 24px;    
+            }   
+            #row3 {
+                width: 100%;
+                background: url('./images/bg-top.jpg') top center/ cover no-repeat;
+                /* position: relative; */
+                padding-bottom: 50px;
+            }
+            /*==========================================  */
+            .content {
+                width: 960px;
+                height: 500px;
+                background-color: #fff;
+                padding: 20px 10px 20px 20px;
+                margin-left: auto;
+                margin-right: auto;
+                box-sizing: border-box;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                
+            }
+            
+            .images-section-top {
+                display: flex;
+            }
+            
+            .image-primary-top {
+                width: 66%;
+                height: 350px;
+                background-color: white;
+                margin-right: 20px;
+            }
+            
+            .image-thumbs-top {
+                display: flex;
+                flex-wrap: wrap;
+                width: 34%;
+                height: 350px;
+                gap: 20px;
+            }
+            
+            .thumb-top {
+                width: calc(50% - 15px);
+                height: calc(100px + 3px);
+                background-color: white;
+            }
+
+
+            /* ===================================== */
+            .text-information h1{
+                color: orange;
+                font-size: 3rem;
+                display: inline-block;
+                padding: 45px 45px 35px 25px;
+                float: left;
+            }
+            .text-information-detail{
+                margin-top: 28px;
+                margin-left: -20px;
+                width: 760px;
+                display: inline-block;
+                float: left;
+            }
+            .information-2{
+                width: 940px;
+                margin-left: auto;
+                margin-right: auto;       
+            }
+            
+            .text-information-2{
+                color: #fff;
+                margin-bottom: 20px;
+                font-size: 3rem;
+            }
+            .information-2  .anh1, .information-2 .anh2{
+                border: 10px solid #fff;
+                float: left;
+                margin-bottom: 20px;
+
+            }
+            .text-information-detail-2{
+                display: inline-block;
+                float:left;
+                position: relative;
+                left: 10px;
+            }
+            .information-detail{
+             
+
+            }
+            .text-information-detail-2{
+                color: orange;
+                /* display: inline-block; */
+            }
+            .maker{
+                
+            }
+            .anh1{
+            
+            }
+            .anh2{
+                position:relative;
+                left: 100px;
+                
+            }
+            .text1{
+                position: relative;
+                left: 20px;
+                top: 10px;
+            }
+            .text2{
+                position: relative;
+                left: 120px;
+                top: 10px;
+            }
+            .maker{
+                position: relative;
+                top: 11px;
+            }
+            /* =====================footer========================== */
+
+            footer{
+                width: 960px;
+                height: 500px;
+                background-color: #75757D;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer-top{
+                background-color: #75757D;
+          
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+          
+            }
+            .footer-bottom{
+                background-color: #262626;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            
+            
+
+
+            /* =======================end of footer=========================== */
+
+       
+            
+        /* CSS */
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li class="list"><a href="#">ABOUT US</a></li>
+                <li class="list"><a href="#">SERVICES</a></li>
+                <li class="list"><a href="#">CATALOGUE</a></li>
+                <li class="list"><a href="#">PRICING</a></li>
+                <li class="list"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="row2">
+            <div class="logo">
+                <a class="logotext" href="index.html"><h1>Int<strong style="color: orange;">e</strong>rior</h1></a>
+                    <span class="logotext2">Design</span>
+                </div>
+                <div class="search">
+                    <form id="search-form" method="post">
+                        <fieldset>	
+                            <div class="search-field">
+                                <input name="search" type="text" />
+                                <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><img src="./images/search-icon.gif" alt=""></a>	
+                        </div>						
+                    </fieldset>
+                    <div class="clear"></div>
+                </form>
+			</div>
+            
+        </div>
+    </header>
+    <!-- Header -->
+        <div id="row3">
+            <!-- Ảnh -->
+            <div class="content">
+                <div class="images-section-top">
+                  <div class="image-primary-top">
+                      <img style="height: 350px; width: 100%;" src="./images/gallery-img4.jpg" alt="">
+                    </div>
+                  <div class="image-thumbs-top">
+                      <div class="thumb-top"><img style="width: 100%; height: 100%;" src="./images/thumb-1.jpg" alt=""></div>
+                      <div class="thumb-top"><img style="width: 100%; height: 100%;" src="./images/thumb-2.jpg" alt=""></div>
+                      <div class="thumb-top"><img style="width: 100%; height: 100%;" src="./images/thumb-3.jpg" alt=""></div>
+                      <div class="thumb-top"><img style="width: 100%; height: 100%;" src="./images/thumb-4.jpg" alt=""></div>
+                      <div class="thumb-top"><img style="width: 100%; height: 100%;" src="./images/thumb-5.jpg" alt=""></div>
+                      <div class="thumb-top"><img style="width: 100%; height: 100%;" src="./images/thumb-6.jpg" alt=""></div>
+                  </div>
+                </div>
+                <!-- Chữ -->
+                <div class="text-information">
+                    
+                    <h1>HELLO! <img style="height: 50px; display: inline;" src="./images/footer-tail.gif" alt=""> </h1>
+                </div>
+                <div class="text-information-detail">
+                    <p><b>Demo Design </b>is one of free website templates created by our team. This website template is optimized for 1024X768 screen resolution. It
+                        also XHTML & CSS valid. It has several pags: About, Service, Catalogue, Pricing, Contact Us (note that contact us form-doesn't work).
+                    </p>
+                </div>
+
+                <!-- /Chữ -->
+            </div>
+            <!-- Ảnh -->
+            <div class="information-2">
+                <h1 class="text-information-2">Our Services List</h1>
+                <div class="information-detail-2">
+                    <img class="anh1" src="./images/page1-img1.jpg" alt="">
+                    <div class="text-information-detail-2"> 
+                     <ul>
+                        <p class="text1"> <img class="maker" src="./images/marker.png" alt=""> Interior Decorating <br> Services</p>
+                        <br>
+                        <p class="text1"> <img class="maker" src="./images/marker.png" alt=""> Complete Color <br> Analysis</p>
+                     </ul>      
+                    </div>   
+                </div>
+                <div class="information-detail-2">
+                    <img class="anh2" src="./images/page1-img2.jpg" alt="">
+                   
+                    <div class="text-information-detail-2">    
+                        
+                        <p class="text2"> <img class="maker" src="./images/marker.png" alt=""> Design services <br> for Home construction</p>
+                        <br>
+                        <p class="text2"><img class="maker" src="./images/marker.png" alt=""> Interior Design Remodeling</p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+  
+
+    <footer>
+        <div class="footer-top">
+
+        </div>
+        <div class="footer-bottom">
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
